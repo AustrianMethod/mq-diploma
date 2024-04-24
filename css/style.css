@@ -1,0 +1,738 @@
+/* начало общих установок */
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "OpenSans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  * { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  a {
+    text-decoration: none; 
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* конец общих установок */
+  
+  /* начало header */
+  
+  .page {
+    margin-bottom: 60px;
+  }
+  
+  .container-logo-menu-header {
+    width: 1200px;
+    padding-top: 27px;
+    padding-bottom: 125px;
+    padding-left: 17px;
+    padding-right: 15px;
+    margin: 0px auto;
+  }
+  
+  .header {
+    position: relative;
+    z-index: 0;
+    min-width: 1660px;
+    margin-bottom: 60px; 
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+  }
+  
+  .container-logo-menu {
+    display: flex;
+    margin-bottom: 107px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container-logo {
+    width: 180px;
+    height: 40px;
+  }
+  
+  .menu-list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0; 
+    padding-left: 0;  
+  }
+  
+  .menu-list-item {
+    margin-left: 35px;
+  }
+  
+  .menu-list-item:first-child {
+    margin-left: 0px; 
+  }
+  
+  .menu-list-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .menu-list-link:hover {
+    text-decoration: underline;
+  }
+  
+  .title {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 1.67;
+    text-transform: uppercase;
+    font-size: 45px;
+  }
+  
+  /* конец header */
+  
+  /* начало trends */
+
+  .trends-header {
+    display: flex;
+    position: relative;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size:  20px;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-bottom: 45px;
+    line-height: 0.9;
+  }
+  
+  .trends-header::before {
+    content: '';
+    position: absolute; 
+    justify-content: center;
+    background-color: #e1d9bd; 
+    bottom: -14px;
+    width: 66px; 
+    height: 3px; 
+  }
+
+  .trends-main {
+     display: grid;
+     width: 100%;
+     min-height: 320px;
+     grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+     gap: 5px;
+  }
+
+  .trends-blocks {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 20px;
+    background-size: cover;
+    background-color: #eff6f1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+  }
+
+  .trends-blocks:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+  }
+
+  .trends-block1 {
+    background-image: url("file:///home/zerousern/Desktop/netology/mq-diploma/images/trend1.jpg");
+  }
+
+  .trends-block2 {
+    background-image: url("file:///home/zerousern/Desktop/netology/mq-diploma/images/trend2.jpg");
+  }
+
+  .trends-block3 {
+    background-image: url("file:///home/zerousern/Desktop/netology/mq-diploma/images/trend3.jpg");
+  }
+
+  .trends-block4 {
+    background-image: url("file:///home/zerousern/Desktop/netology/mq-diploma/images/trend4.jpg");
+  }
+
+  .trends-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 3px solid #b59f5b;
+    padding: 5px 30px;
+  }
+
+  .trends-list {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: text-top;
+    margin-bottom: 7px;
+  }
+
+  .trends-item {
+    padding-top: 30px;
+    margin-left: 20px;
+  }
+  
+  .trends-item:first-child {
+    margin-left: 0px; 
+  }
+
+  .trends-item-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    /* line-height: 40px; */
+    text-transform: uppercase;
+    color: #b59f5b;
+  }
+  
+  .trends-item-link:hover {
+    text-decoration: underline;
+  }
+
+  .trends-title {
+    margin-bottom: 29px;
+  }
+
+  .trends-title-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .trends-title-link:hover {
+    color: #b59f5b;
+  }  
+
+  /* конец trends */
+
+  /* начало container-main-sidebar */
+  
+  .main {
+   width: 793px;
+  }
+  
+  .container-main-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 64px auto 64px auto;
+    max-width: 1200px;
+  }
+
+  .last-post {
+    display: flex;
+    margin-top: 60px;
+    padding-left: 15px;
+  }
+  
+  .last-post:first-child {
+    margin-top: 0px; 
+  }
+  
+  .last-post-image {
+    margin-right: 30px;
+    height: 294px;
+    width: 381px;
+    background-color: #f4f7f6;
+    background-size: cover;
+  }
+  
+  .last-post-container {
+    width: 367px;
+  }
+  
+  .last-post-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: text-top;
+    margin-bottom: 7px;
+  }
+  
+  .last-post-tags {
+    margin-left: 20px;
+  }
+  
+  .last-post-tags:first-child {
+    margin-left: 0px; 
+  }
+  
+  .last-post-tags-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #b59f5b;
+    text-transform: uppercase;
+  }
+  
+  .last-post-tags-link:hover {
+    text-decoration: underline;
+  }
+  
+  .last-post-title {
+    margin-bottom: 29px;
+  }
+  
+  .last-post-authors-date-container {
+    margin-bottom: 44px;  
+  }
+  
+  .last-post-title-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  
+  .last-post-title-link:hover {
+    color: #b59f5b;
+  }
+  
+  .post-date {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #888888;
+  }
+  
+  .post-date-add {
+    display: block;  
+    margin-bottom: 6px;
+    line-height: 0.8;
+  }
+  
+  .last-post-authors {
+    display: inline-block;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    margin-left: 9px;
+  }
+  
+  .last-post-content {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 22px;
+  }
+  
+  .sidebar {
+    width: 287px;
+    margin-left: 120px;
+    padding-right: 16px;
+  }
+  
+  .sidebar-posts {
+    margin-bottom: 60px;
+  }
+  
+  .sidebar-posts-header {
+    display: flex;
+    position: relative;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-bottom: 43px;
+    line-height: 0.9;
+  }
+  
+  .sph-mb {
+    margin-bottom: 26px;
+  }
+  
+  .sidebar-posts-header::before {
+    content: '';
+    position: absolute; 
+    justify-content: center;
+    background-color: #e1d9bd; 
+    bottom: -14px;
+    width: 66px; 
+    height: 3px; 
+  }
+  
+  .sidebar-posts-article {
+    display: flex;
+    margin-top: 22px;
+  }
+  
+  .sidebar-posts-article:nth-child(2) {
+    margin-top: 0px;
+  }
+  
+  .sidebar-img {
+    height: 70px;
+    width: 70px;
+    background-color: #f4f7f6;
+  }
+  
+  .img-time-container {
+    margin-left: 17px;
+  }
+  
+  .sidebar-post-link{
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .sidebar-post-link:hover {
+    color: #b59f5b;
+  }
+  
+  .sidebar-post-header {
+    line-height: 0.9;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  } 
+  
+  .sidebar-search-form {
+    margin-bottom: 59px;
+  }
+  
+  .search-form {
+    display: flex;
+    height: 48px;
+  }
+  
+  .search-field {
+    display: block;
+    height: 48px;
+    width: 222px;
+    padding-left: 18px;
+    border: none;
+    outline: none;
+    appearance: none;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 40px;
+    color: #999999;
+    background-color: #f4f7f6; 
+  }
+  
+  .search-field:focus {
+    border: 1px solid #b59f5b;
+    padding-left: 17px;
+  }
+  
+  .search-button {
+    display: block;
+    padding: 24px;
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-size: 18px;
+    background-color: #b59f5b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+  }
+  
+  .search-button:hover {
+    background-color: #323232;
+  }
+  
+  .sidebar-mailing-form {
+    position: relative;
+    height: 164px;
+    margin-bottom: 61px;
+  }
+  
+  .mailing-field {
+    width: 270px;
+    margin-bottom: 17px; 
+  }
+  
+  .mailing-button {
+    display: block;
+    height: 48px;
+    width: 270px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    justify-content: center;
+    line-height: 30px;
+    background-color: #b59f5b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+  }
+  
+  .mailing-button:hover {
+    background-color: #323232;
+  }
+  
+  .aside-tags-list {
+    width: 270px;
+     margin-bottom: 52px;
+  }
+  
+  .tags-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tags-list-item {
+    display: flex;
+    align-items: center;
+    border: 3px solid #ededed;
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    padding: 0px 13px;
+  }
+  
+  .tags-list-item:hover {
+    border: 3px solid #b59f5b;
+  }
+  
+  .tags-item-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  
+  .topic-list-item {
+    border-bottom: 1px solid #ededed;
+    margin-right: 5px;
+    margin-bottom: 6px;
+  }
+  
+  .topic-item-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    line-height: 35px;
+  }
+  
+  .topic-item-link:hover {
+    color: #b59f5b;
+  }
+  
+  sup {
+    padding-left: 5px;
+    color: #b59f5b;
+  }
+  
+  /* конец container-main-sidebar */
+  
+  /* начало products-container */
+
+  .products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto 60px;
+    max-width: 1170px;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 350px;
+    flex-grow: 1;
+  }
+
+  .product-img-container {
+    padding: 0px 20px;
+  }
+
+  .product-spec {
+    /* display: flex;
+    flex-direction: column; */
+    border: 3px solid #b59f5b;
+    margin-top: -31px;
+    padding: 50px 20px 25px;
+    
+    
+  }
+
+  .product-title {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-weight: 700;
+  }
+
+  .product-text {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+  }
+
+  .price-button-container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .prev-price {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.9;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-weight: 700;
+  }
+
+  .curr-price {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: #0f0d0e;
+  }
+
+  .to-shop {
+    width: 140px;
+  }
+
+  /* конец products-container */
+
+  /* начало footer */
+  
+  .footer {
+    height: 170px;
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+  }
+  
+  .socials {
+    width: 1170px;
+    height: 83px;
+    background-color: #f4f7f6;
+    margin: 0 auto;
+  }
+  
+  .socials-list {
+     display: flex;
+    padding: 33px 0 27px;
+    justify-content: center;
+  }
+  
+  .social-list-item {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-left: 29px;
+  }
+  
+  .social-list-item:first-child {
+    padding-left: 2px; 
+  }
+  
+  .social-list-item:last-child {
+    padding-left: 26px; 
+  }
+  
+  .social-icon-link {
+    display: block;
+    padding: 10px;
+    background-repeat: no-repeat;
+  }
+  
+  .social-icon-dribbble {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+  }
+  
+  .social-icon-pinterest {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+  }
+  
+  .social-icon-tumblr {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+  }
+  
+  .copyrights {
+    width: 1170px;
+    padding-top: 70px;
+    text-align: center;
+  }
+  .copyrights-text {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #999999;
+  }
+  
+  /* конец footer */
