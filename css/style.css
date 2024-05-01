@@ -59,7 +59,7 @@ li {
 .header {
   position: relative;
   z-index: 0;
-  min-width: 1660px;
+  min-width: 1200px;
   margin-bottom: 60px; 
   background-image: url("/mq-diploma/images/banner-bg.jpg");
   background-size: cover;
