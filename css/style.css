@@ -3,9 +3,9 @@
 @font-face {
   font-family: "OpenSans";
   src: 
-    url("/netology/mq-diploma/fonts/OpenSans-Bold.woff2") format("woff2"),
-    url("/netology/mq-diploma/fonts/OpenSans-Bold.woff") format("woff"),
-    url("/netology/mq-diploma/fonts/OpenSans-Bold.ttf") format("truetype");
+    url("/mq-diploma/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("/mq-diploma/fonts/OpenSans-Bold.woff") format("woff"),
+    url("/mq-diploma/fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -14,9 +14,9 @@
 @font-face {
   font-family: "OpenSans";
   src: 
-    url("/netology/mq-diploma/fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("/netology/mq-diploma/fonts/OpenSans-Regular.woff") format("woff"),
-    url("/netology/mq-diploma/fonts/OpenSans-Regular.ttf") format("truetype");
+    url("/mq-diploma/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("/mq-diploma/fonts/OpenSans-Regular.woff") format("woff"),
+    url("/mq-diploma/fonts/OpenSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-display: swap;
 }
@@ -61,7 +61,7 @@ li {
   z-index: 0;
   min-width: 1660px;
   margin-bottom: 60px; 
-  background-image: url("/netology/mq-diploma/images/banner-bg.jpg");
+  background-image: url("/mq-diploma/images/banner-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -188,19 +188,19 @@ li {
 }
 
 .trends-block1 {
-  background-image: url("/netology/mq-diploma/images/trend1.jpg");
+  background-image: url("/mq-diploma/images/trend1.jpg");
 }
 
 .trends-block2 {
-  background-image: url("/netology/mq-diploma/images/trend2.jpg");
+  background-image: url("/mq-diploma/images/trend2.jpg");
 }
 
 .trends-block3 {
-  background-image: url("/netology/mq-diploma/images/trend3.jpg");
+  background-image: url("/mq-diploma/images/trend3.jpg");
 }
 
 .trends-block4 {
-  background-image: url("/netology/mq-diploma/images/trend4.jpg");
+  background-image: url("/mq-diploma/images/trend4.jpg");
 }
 
 .trends-text {
@@ -488,7 +488,7 @@ li {
 .search-button {
   display: block;
   padding: 24px;
-  background-image: url("/netology/mq-diploma/svg/search.svg");
+  background-image: url("/mq-diploma/svg/search.svg");
   background-size: 18px;
   background-color: #b59f5b;
   background-repeat: no-repeat;
@@ -716,15 +716,15 @@ sup {
 }
 
 .social-icon-dribbble {
-  background-image: url("/netology/mq-diploma/svg/001-dribbble.svg");
+  background-image: url("/mq-diploma/svg/001-dribbble.svg");
 }
 
 .social-icon-pinterest {
-  background-image: url("/netology/mq-diploma/svg/002-pinterest.svg");
+  background-image: url("/mq-diploma/svg/002-pinterest.svg");
 }
 
 .social-icon-tumblr {
-  background-image: url("/netology/mq-diploma/svg/003-tumblr.svg");
+  background-image: url("/mq-diploma/svg/003-tumblr.svg");
 }
 
 .copyrights {
@@ -774,7 +774,7 @@ sup {
   height: 1.4em;
   font-size: 20px;
   background-color: transparent;
-  background-image: url("/netology/mq-diploma/svg/form-x.svg");
+  background-image: url("/mq-diploma/svg/form-x.svg");
   background-size: 17px;
   background-repeat: no-repeat;
   background-position: bottom 5px right 0px;
@@ -811,7 +811,7 @@ sup {
   border: none;
   appearance: none;
   background-color: #f4f7f6;
-  background-image: url("/netology/mq-diploma/svg/form-arrows.svg");
+  background-image: url("/mq-diploma/svg/form-arrows.svg");
   background-size: 9px;
   background-repeat: no-repeat;
   background-position: bottom 15px right 15px;
@@ -841,13 +841,13 @@ sup {
   appearance: none;
   height: 17px;
   width: 17px; 
-  background-image: url("/netology/mq-diploma/svg/form-empty-circle.svg");
+  background-image: url("/mq-diploma/svg/form-empty-circle.svg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   }
 
 .radio-checkbox:checked { 
-  background-image: url("/netology/mq-diploma/svg/form-circle.svg");
+  background-image: url("/mq-diploma/svg/form-circle.svg");
 }
 
 .quiz-textarea {
