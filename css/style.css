@@ -172,6 +172,7 @@ li {
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
+  min-height: 245px;
 }
 
 .trends-blocks:after {
@@ -611,6 +612,7 @@ sup {
 .product-img {
   display: block;
   background-color: #eff6f1;
+  width: 100%;
 }
 
 .product-spec {
@@ -832,6 +834,14 @@ sup {
   border: 1px solid #b59f5b;
 }
 
+.quiz-textarea:focus {
+  padding: 15px 19px 0px;
+}
+
+.quiz:focus {
+  padding-left: 17px;
+}
+
 .quiz-opt {
   color: rgba(0,0,0,0.5);
 }
@@ -860,9 +870,9 @@ sup {
 }
 
 .quiz-textarea {
-  max-height: 130px;
+  height: 130px;
   margin-top: 10px;
-  padding: 16px 0px 0px 20px;
+  padding: 16px 20px 0px;
   border: none; 
   background-color: #f4f7f6;
   resize: none;
@@ -882,6 +892,8 @@ sup {
 @media (max-width: 1200px) { 
 
   .header {
+    /* min-width: 361px; */
+    /* width: auto; */
     background-image: url("../images/banner-bg-tablet.jpg");
     margin-bottom: 50px;
   }
@@ -942,8 +954,8 @@ sup {
     flex-wrap: nowrap;
     max-width: 700px;
     margin-top: 50px;
-    margin-bottom: 70px;
-    padding: 0 35px;
+    margin-bottom: 60px;
+    padding: 0px;
   }
 
   .container-menu {
@@ -976,6 +988,7 @@ sup {
 
   .sidebar { 
     margin-left: 38px;
+    padding-right: 0;
   }
 
   .last-post-authors-date-container {
@@ -994,6 +1007,10 @@ sup {
 
   .prod-header {
     margin-bottom: 45px;
+  }
+
+  .product-title {
+    font-size: 17px;
   }
 
   .add-prod-container {
@@ -1040,7 +1057,7 @@ sup {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse; 
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 
   .container-logo-menu-header {
@@ -1050,6 +1067,8 @@ sup {
 
   .container-logo {
     max-width: 270px;
+    width: 100%;
+    height: auto;
   }
 
   .container-menu {
@@ -1187,8 +1206,18 @@ sup {
     font-size: 18px;
   }
 
+  .product-img2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pic-wrap {
+    padding: 0 20px;
+  }
+
   .to-shop {
-    width: 140px;
+    width: calc(100% - 80px);
+    max-width: 140px;
   }
  
   .footer {
