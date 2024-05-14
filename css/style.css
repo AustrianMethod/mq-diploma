@@ -938,7 +938,6 @@ sup {
 
   .trends-main {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    gap: 5px;
   }
 
   .trends-title {
@@ -1226,13 +1225,15 @@ sup {
 
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
+@media (max-height: 640px) and (orientation: landscape) {
 
   .trends-main {
     grid-template: repeat(1, 1fr) / repeat(2, 1fr);
   }
 
 }
+
+
 
 /* версия для малых экранов конец*/
 
